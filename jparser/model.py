@@ -3,10 +3,8 @@
 import re
 import lxml
 import lxml.html
-try:
-    from urllib.parse import urlparse
-except ImportError:
-    from urlparse import urlparse
+from urllib import parse as urlparse
+
 from .tags_util import clean_tags_only, clean_tags_hasprop, clean_tags_exactly, clean_tags, pick_listed_tags, clean_ainp_tags
 from .region import Region
 
